@@ -13,6 +13,10 @@ const Header = () => {
             alt="Evently logo"
           />
         </Link>
+
+        <div className="flex w-32 justify-end gap-3">
+          
+        </div>
       </div>
     </header>
   )
