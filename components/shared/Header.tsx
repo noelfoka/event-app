@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "../ui/button"
-import { SignedOut } from "@clerk/nextjs"
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs"
 
 const Header = () => {
   return (
@@ -17,6 +17,9 @@ const Header = () => {
         </Link>
 
         <div className="flex w-32 justify-end gap-3">
+          <SignedIn>
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
           <SignedOut>
             <Button className="rounded-full" size="lg">
               <Link href="/sign-in">
