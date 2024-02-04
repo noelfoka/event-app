@@ -12,9 +12,9 @@ import {
 
 const MobileNav = () => {
   return (
-    <div>
+    <nav className='md-hidden'>
       Mobilenav
-    </div>
+    </nav>
   )
 }
 
