@@ -25,6 +25,7 @@ export default function Home() {
             alt='hero'
             width={1000}
             height={1000}
+            className='max-h-[70vh] object-contain'
           />
         </div>
       </section>
