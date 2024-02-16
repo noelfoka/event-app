@@ -13,9 +13,11 @@ const Footer = () => {
             height={38} 
           />
         </Link>
+
+        <p>2024 Evently, All Right reserved.</p>
       </div>
-    </footer>>
-  );
+    </footer>
+  )
 }
 
 export default Footer
