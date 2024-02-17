@@ -6,5 +6,6 @@ const EventSchema = new Schema({
   location: { type: String },
   createdAt: { type: Date, default: Date.now},
   imageUrl: { type: String, required: true },
-  startDate: { type: Date, required: true },
+  startDateTime: { type: Date, default: Date.now },
+  endDateTime: { type: Date, default: Date.now },
 })
