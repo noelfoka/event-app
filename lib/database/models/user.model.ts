@@ -5,5 +5,6 @@ const UserSchema = new Schema({
   email: { type: "string", required: true, unique: true},
   username: { type: "string", required: true, unique: true},
   firstName: { type: "string", required: true },
-  lastName: { type: "string", required: true}
+  lastName: { type: "string", required: true},
+  photo: { type: "string", required: true}
 });
