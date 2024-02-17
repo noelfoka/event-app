@@ -8,4 +8,6 @@ const EventSchema = new Schema({
   imageUrl: { type: String, required: true },
   startDateTime: { type: Date, default: Date.now },
   endDateTime: { type: Date, default: Date.now },
+  price: { type: String },
+  isFree: { type: Boolean, default: false }
 })
