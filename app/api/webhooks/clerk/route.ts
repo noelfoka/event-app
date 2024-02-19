@@ -3,6 +3,7 @@ import { headers } from 'next/headers'
 import { WebhookEvent } from '@clerk/nextjs/server'
 import { createUser } from '@/lib/actions/user.actions'
 import { clerkClient } from '@clerk/nextjs'
+import { NextResponse } from 'next/server'
  
 export async function POST(req: Request) {
  
@@ -74,6 +75,8 @@ export async function POST(req: Request) {
         }
       })
     }
+
+    return NextResponse.json({ message: 'OK', user: newUser })
   }
  
   return new Response('', { status: 200 })
