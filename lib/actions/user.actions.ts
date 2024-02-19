@@ -1,5 +1,11 @@
 'use server';
 
-export const createUser = async (user) => {
-  
+import { CreateUserParams } from "@/types";
+
+export const createUser = async (user: CreateUserParams) => {
+  try {
+
+  } catch (err) {
+    
+  }
 }
